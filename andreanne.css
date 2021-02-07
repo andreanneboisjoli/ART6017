@@ -104,6 +104,7 @@ a.current:link, a.current:visited {
 a.menu {
     padding:0px;
     color:white;
+    text-decoration: none;
 }
 
 .textefooter {
