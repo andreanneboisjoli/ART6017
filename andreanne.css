@@ -19,11 +19,7 @@ body.reflexion{
     background-image:url("controleur.jpg");
 }
 
-.hautdepage {
-    
-    
-   
-}
+
 
 main{
     
@@ -107,6 +103,7 @@ a.current:link, a.current:visited {
 
 a.menu {
     padding:0px;
+    color:white;
 }
 
 .textefooter {
