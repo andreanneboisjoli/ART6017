@@ -1,0 +1,148 @@
+p {
+color:white;
+     font-size:13px;
+    font-family: 'Montserrat', sans-serif;
+    line-height:1.5;
+}
+
+
+
+body{
+    background-image:url("piano.jpg");
+}
+
+body.introduction{
+    background-image:url("disque.jpg");
+}
+
+body.reflexion{
+    background-image:url("controleur.jpg");
+}
+
+.hautdepage {
+    
+    
+   
+}
+
+main{
+    
+    margin-top: 7vw;
+    margin-left:10vw;
+    margin-right:10vw;
+    padding-top:5px;
+    padding-left:12px;
+    padding-right:12px;
+    padding-bottom:60px;
+  width: 70vw;
+    
+}
+
+h1 {
+    font-family: 'Montserrat', sans-serif;
+    font-size:14px;
+    text-transform: uppercase;
+    color:white;
+}
+
+
+li{
+    
+    display:inline-block;
+    font-size:30px;
+    vertical-align:middle;
+    line-height: 50px;
+    text-transform: uppercase;
+    color:white;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.menu{
+    
+    margin-top:10px;
+    margin-bottom:10px;
+    margin-right:40px;
+    text-decoration: none;
+    }
+    
+#logo {
+    width:100px;
+}
+
+
+a.menu:visited {
+  color: white;
+    text-decoration: none;
+}
+
+.footer{
+  background-color:#aa1414;
+  padding:10px;
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  padding: 1rem;
+}
+
+
+
+.contenu {
+    background-color: #141414;
+    padding:20px;
+    width:50vw;
+}
+
+.espace {
+    
+    
+}
+
+
+
+a.current:link, a.current:visited {
+  color: #a14140;
+}
+
+
+a.menu {
+    padding:0px;
+}
+
+.textefooter {
+       
+  padding-left:10vw;  
+  width: 70vw;
+
+}
+
+.credits{
+    font-size:10px;
+    color:black;
+}
+
+a.credits {
+    color:white;
+}
+
+a.credits:visited {
+    color:#3c1335;
+}
+
+.intro {
+    text-transform: uppercase;
+    font-size: 50px;
+    color:#aa1414;
+    text-align:center;
+}
+
+ a.lien   {
+    color: #a14140;
+}
+
+ a.lien:visited  {
+    color: #b4b4b4;
+}
+
+
+
