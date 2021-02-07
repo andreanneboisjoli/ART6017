@@ -101,11 +101,7 @@ a.current:link, a.current:visited {
 }
 
 
-a.menu {
-    padding:0px;
-    color:white;
-    text-decoration: none;
-}
+
 
 .textefooter {
        
@@ -142,5 +138,9 @@ a.credits:visited {
     color: #b4b4b4;
 }
 
-
+a.menu {
+    padding:0px;
+    color:white;
+    text-decoration: none;
+}
 
