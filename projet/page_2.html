@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+   <head>
+      <meta charset="utf-8">
+      <title>Plaisirs extraterrestres</title>
+      <link rel="stylesheet" href="style.css">
+      <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+      <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js"></script>
+      <script src="script.js"></script>
+   </head>
+   <body class="p2">
+      <video width="100%" autoplay muted loop id="myVideo">
+         <source src="saule.mp4" type="video/mp4">
+         Votre navigateur ne supporte pas le vidéo HTML5.
+      </video>
+      <audio autoplay controls id="myAudio">
+         <source src="lune.ogg" type="audio/ogg">
+         <source src="lune.mp3" type="audio/mpeg">
+         Votre navigateur ne supporte pas l'élément audio.
+      </audio>
+      <div class="titre">
+         <h1>Plaisirs extraterrestres</h1>
+      </div>
+      <div class="boite">
+         <p class="texte">Je n’avais que dix-sept ans à l’époque, et comme Rimbaud l’a dit, « on n’est pas sérieux, quand on a dix-sept ans ». Malgré tout le temps qui s’est écoulé depuis, les sensations – l’odeur de la forêt, des fleurs et des fraises, charriée par le vent; le chatouillis des fougeroles sur ma peau, le métal froid sur mes chevilles et mes poignets ligotés; le goût des brioches que mon grand-père m’avait données avant mon départ de la Terre, le sucre se dissolvant encore dans ma bouche; le clapotis de la rivière qui coulait plus bas, le jargon des Martiens – oui, ces sensations sont encore vives dans ma mémoire. La douleur intense est susceptible d’ancrer dans vos têtes les plus infimes détails.</p>
+         <div class="carre">
+            <a class="carre" href="page_1.html">
+               <p class="carre">&#60;</p>
+            </a>
+         </div>
+         <div class="carre">
+            <a class="carre" href="page_3.html">
+               <p class="carre">&#62;</p>
+            </a>
+         </div>
+      </div>
+      <!-- <button id="myBtn" onclick="myFunction()">Pause</button> -->
+      <footer class="footer">
+         <div class="textefooter">
+            <p class="credits">Texte: Noah Boisjoli-Jebali<br>Un site de <a class="credits" href="mailto:jacinthe.bouchard@hotmail.ca">Jacinthe Bouchard</a> et <a class="credits" href="mailto:andreanneboisjoli@gmail.com">Andréanne Boisjoli</a> <br>Musique : Patrick Tremblay<br>Vidéo par <a href="https://www.pexels.com/video/nature-tree-river-wind-4980222/" class="credits" target="_blank">Super Lunar</a> sur Pexels</p>
+         </div>
+      </footer>
+       
+       <script>
+       //Arrêter l'audio avec la barre d'espace
+           
+       var audio = document.querySelector('audio');
+
+if (audio) {
+
+  window.addEventListener('keydown', function (event) {
+
+    var key = event.which || event.keyCode;
+
+    if (key === 32) { // spacebar
+
+      // eat the spacebar, so it does not scroll the page
+      event.preventDefault();
+
+      audio.paused ? audio.play() : audio.pause();
+      
+    }
+
+  });
+}
+       </script>
+      
+   </body>
+</html>

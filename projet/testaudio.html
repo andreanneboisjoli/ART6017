@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+    
+    <head>
+        <meta charset="utf-8">
+        
+        <title>test_animation</title>
+        
+        <link rel="stylesheet" href="style.css">
+        <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+        <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js"></script>
+        <script src="script.js"></script>
+            
+       
+       </head>
+    <body class="monet">
+  
+     
+
+<audio id="myAudio">
+  <source src="lune.ogg" type="audio/ogg">
+  <source src="lune.mp3" type="audio/mpeg">
+  Your browser does not support the audio element.
+</audio>
+
+<p>Click the buttons to play or pause the audio.</p>
+
+<button onclick="playAudio()" type="button">Play Audio</button>
+<button onclick="pauseAudio()" type="button">Pause Audio</button> 
+
+<script>
+var x = document.getElementById("myAudio"); 
+
+function playAudio() { 
+  x.play(); 
+} 
+
+function pauseAudio() { 
+  x.pause(); 
+} 
+</script>
+
+
+
+                    
+       <footer class="footer">
+            <div class="textefooter">
+                <p class="credits">Texte: Noah Boisjoli-Jebali<br>Un site de <a class="credits" href="mailto:jacinthe.bouchard@hotmail.ca">Jacinthe Bouchard</a> et <a class="credits" href="mailto:andreanneboisjoli@gmail.com">Andréanne Boisjoli</a> <br>Image: Monet, Les Nympéhas.<br>Musique : Clair de Lune, par Debussy, joué par <a href="http://www.lisztonian.com/titles/Clair+de+Lune-113.html" class="credits" target="_blank">Jeremiah Jones</p>
+        </div>
+                </footer>
+                   
+                   </div>
+    </body>
+    
+            
+          
+</html>
+

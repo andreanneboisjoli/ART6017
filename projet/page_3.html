@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+   <head>
+      <meta charset="utf-8">
+      <title>Plaisirs extraterrestres</title>
+      <link rel="stylesheet" href="style.css">
+      <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+      <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js"></script>
+       <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+      <script src="script.js"></script>
+   </head>
+   <body class="jardin">
+      <audio autoplay controls id="myAudio">
+         <source src="lune.ogg" type="audio/ogg">
+         <source src="lune.mp3" type="audio/mpeg">
+         Votre navigateur ne supporte pas l'élément audio.
+      </audio>
+      <!-- <div class="ctn">-->
+         <div class="flash"> bonjour</div>
+      <div class="titre">
+         <h1>Plaisirs extraterrestres</h1>
+      </div>
+      <div class="boite">
+         <p class="texte">Une fois assurés que mes bras et mes jambes étaient bien garrottés à la chaise électrique, les Martiens abaissèrent le levier et un courant térébrant parcourut mon corps, des talons aux poumons aux doigts aux follicules pileux de mon crâne. Une fois, deux fois, dix fois. Les Martiens sont plus polis que ce que nous le pensions avant de les rencontrer lors des premiers conflits extraterrestres, cependant ils ont une propension à la violence extrême. Entre chaque électrocution, ils me demandaient si j’allais bien, si je voulais un verre d’eau. Je les suppliais d’arrêter, ils disaient qu’ils étaient infiniment désolés, puis ils continuaient.</p>
+          
+         <button class="btn1">Fade out</button>
+<button class="btn2">Fade in</button>
+         <div class="carre_3">
+            <a class="carre_3" href="page_2.html">
+               <p class="carre_3">&#60;</p>
+            </a>
+         </div>
+         <div class="carre_3">
+            <a class="carre_3" href="page_4.html">
+               <p class="carre_3">&#62;</p>
+            </a>
+         </div>
+      </div>
+      <!--  </div> -->
+      <footer class="footer_3">
+         <div class="textefooter">
+            <p class="credits">Texte: Noah Boisjoli-Jebali<br>Un site de <a class="credits" href="mailto:jacinthe.bouchard@hotmail.ca">Jacinthe Bouchard</a> et <a class="credits" href="mailto:andreanneboisjoli@gmail.com">Andréanne Boisjoli</a> <br>Image par <a href="https://pixabay.com/fr/users/scholty1970-7596740/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=4336753">Achim Scholty</a> de <a href="https://pixabay.com/fr/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=4336753">Pixabay</a><br>Musique : Patrick Tremblay</p>
+            Image par <a href="https://pixabay.com/fr/users/scholty1970-7596740/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=4336753">Achim Scholty</a> de <a href="https://pixabay.com/fr/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=4336753">Pixabay</a>
+         </div>
+                   
+          
+      </footer>
+       
+       
+        <script>
+       
+           //arrêter l'audio la barre d'espace 
+            
+       var audio = document.querySelector('audio');
+
+if (audio) {
+
+  window.addEventListener('keydown', function (event) {
+
+    var key = event.which || event.keyCode;
+
+    if (key === 32) { // spacebar
+
+      // eat the spacebar, so it does not scroll the page
+      event.preventDefault();
+
+      audio.paused ? audio.play() : audio.pause();
+      
+    }
+
+  });
+}
+            
+            
+            
+            
+            //fadeIn
+            
+           
+$(document).ready(function(){
+  $(".btn1").click(function(){
+    $(".flash").fadeOut();
+  });
+  $(".btn2").click(function(){
+    $(".flash").fadeIn();
+  });
+});
+</script>
+       
+   </body>
+</html>
