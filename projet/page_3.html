@@ -9,22 +9,22 @@
        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
       <script src="script.js"></script>
    </head>
-   <body class="jardin">
-      <audio autoplay controls id="myAudio">
+   <body class="jardin" id="canvas">
+      <audio autoplay id="debussy">
          <source src="lune.ogg" type="audio/ogg">
          <source src="lune.mp3" type="audio/mpeg">
          Votre navigateur ne supporte pas l'élément audio.
       </audio>
       <!-- <div class="ctn">-->
-         <div class="flash"> bonjour</div>
+         <div class="flash">   </div>
       <div class="titre">
          <h1>Plaisirs extraterrestres</h1>
       </div>
       <div class="boite">
          <p class="texte">Une fois assurés que mes bras et mes jambes étaient bien garrottés à la chaise électrique, les Martiens abaissèrent le levier et un courant térébrant parcourut mon corps, des talons aux poumons aux doigts aux follicules pileux de mon crâne. Une fois, deux fois, dix fois. Les Martiens sont plus polis que ce que nous le pensions avant de les rencontrer lors des premiers conflits extraterrestres, cependant ils ont une propension à la violence extrême. Entre chaque électrocution, ils me demandaient si j’allais bien, si je voulais un verre d’eau. Je les suppliais d’arrêter, ils disaient qu’ils étaient infiniment désolés, puis ils continuaient.</p>
           
-         <button class="btn1">Fade out</button>
-<button class="btn2">Fade in</button>
+        <button id="play" onclick="playAudio()" type="button">Play</button>
+        <button id="pause" onclick="pauseAudio()" type="button">Pause</button>
          <div class="carre_3">
             <a class="carre_3" href="page_2.html">
                <p class="carre_3">&#60;</p>
@@ -45,9 +45,25 @@
                    
           
       </footer>
-       
+    
        
         <script>
+            
+            
+            
+            
+           // /Faire jouer  arrêter la musique quand on appuie sur le bouton
+                    
+       var x = document.getElementById("debussy"); 
+         
+         function playAudio() { 
+           x.play(); 
+         } 
+         
+         function pauseAudio() { 
+           x.pause(); 
+         } 
+              
        
            //arrêter l'audio la barre d'espace 
             
@@ -71,20 +87,32 @@ if (audio) {
   });
 }
             
+ // Éclair qui apparaît de façon aléatoire
+       
+ function randRange(data) {
+       var newTime = data[Math.floor(data.length * Math.random())];
+       return newTime;
+}
+
+function toggleSomething() {
+       var timeArray = new Array(4000, 300, 150, 250, 2000, 3000, 1000, 1500);
+
+            $(".flash").fadeIn(20).fadeOut(70); 
+
+       clearInterval(timer);
+       timer = setInterval(toggleSomething, randRange(timeArray));
+}
+
+var timer = setInterval(toggleSomething, 1000);
+        
             
             
             
-            //fadeIn
             
-           
-$(document).ready(function(){
-  $(".btn1").click(function(){
-    $(".flash").fadeOut();
-  });
-  $(".btn2").click(function(){
-    $(".flash").fadeIn();
-  });
-});
+      
+
+            
+            
 </script>
        
    </body>
