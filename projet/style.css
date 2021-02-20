@@ -1,6 +1,6 @@
 p      {
     
-    color: white;
+    color: black;
 }
 
 /* Fonds de pages */
@@ -29,6 +29,15 @@ p      {
     
 }
 
+.page-container {
+    position: relative;
+    min-height: 100vh;
+}
+
+.content-wrap {
+    padding-bottom: 135px;
+}
+
 .monet      {
     margin:0;
     padding:0;
@@ -48,36 +57,15 @@ p      {
 
 
 
-
-/*.ctn {
-    
-    
-    margin:0;
-    padding:0;
-    border:none;
-    outline:0;
-    font-size:100%;
-    vertical-align:baseline;
-    height:100vw;
-    width:100vh;
-    
-   background-image:url("flash.jpg");
-    display:none;
-    position:absolute;
-    border: solid; 
-  
-          
-      
-}*/
-
-
 .flash   {
     
     width:100vw;
     height:100vw;
-    background: pink;
+    background-image:url("eclair.jpg");
     display:none;
-    z-index: 4;
+    z-index: 1000;
+    position:absolute;
+    opacity:70%;
     
 }
 
@@ -92,6 +80,7 @@ p      {
     z-index:2;
     width:50vw;
     opacity: 0.8;
+    margin-bottom: 5vw;
     
     
 }
@@ -105,6 +94,8 @@ p      {
     z-index:2;
     width:50vw;
     opacity: 0.9;
+    font-family: 'Courgette', cursive;
+    font-size: 20px;
 }
 
 
@@ -112,6 +103,7 @@ p      {
    
     color: black;
     padding: 30 px;
+    font-family: 'Gabriela', serif;
 }
 
 
@@ -143,20 +135,6 @@ p      {
     
 }
 
-#myBtn {
-  width: 200px;
-  font-size: 18px;
-  padding: 10px;
-  border: none;
-  background-color:rosybrown;
-  color: #fff;
-  cursor: pointer;
-}
-
-#myBtn:hover {
-  background: #ddd;
-  color: black;
-    }
 
     .footer {
     background-color:#617866;
@@ -166,6 +144,16 @@ p      {
     bottom: 0;
     left: 0;
     padding: 1rem;
+    margin-top: 5vw;
+    height: 135px;
+}
+
+button {
+  font-family: 'Courgette', cursive;          
+}
+
+.credits-link {
+    color: white;
 }
 
 .footer_3 {
@@ -185,6 +173,10 @@ p      {
 div.suite{
     
     display:none;
+    color: black;
+    padding: 30 px;
+    font-family: 'Gabriela', serif;
+    
 }
 
 
@@ -202,8 +194,12 @@ div.suite:target {
     font-size: 30px;
     text-align:center;
     
-    text-decoration: none;color: white;
-    font-weight: bold;    
+    text-decoration: none;
+    color: white;
+    font-weight: bold; 
+    
+    
+    
 }
 
 
@@ -214,11 +210,13 @@ div.suite:target {
     background-color: #617866;
     width:40px;
     height:40px;
+    padding-top: 3px;
     font-size: 30px;
     text-align:center;
     color: white;
     font-weight: bold;
     text-decoration: none;
+    
     
 }
 
@@ -234,8 +232,4 @@ div.suite:target {
     font-weight: bold;
     
 }
-
-
-
-
 
