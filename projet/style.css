@@ -1,3 +1,5 @@
+
+
 p      {
     
     color: white;
@@ -27,6 +29,15 @@ p      {
     vertical-align:baseline;
     
     
+}
+
+.page-container {
+    position: relative;
+    min-height: 100vh;
+}
+
+.content-wrap {
+    padding-bottom: 135px;
 }
 
 .monet      {
@@ -92,6 +103,7 @@ p      {
     z-index:2;
     width:50vw;
     opacity: 0.8;
+    margin-bottom: 5vw;
     
     
 }
@@ -105,6 +117,8 @@ p      {
     z-index:2;
     width:50vw;
     opacity: 0.9;
+    font-family: 'Gabriela', serif;
+    font-size: 20px
 }
 
 
@@ -112,6 +126,7 @@ p      {
    
     color: black;
     padding: 30 px;
+    font-family: 'Gabriela', serif;
 }
 
 
@@ -166,6 +181,12 @@ p      {
     bottom: 0;
     left: 0;
     padding: 1rem;
+    margin-top: 5vw;
+    height: 135px;
+}
+
+.credits-link {
+    color: white;
 }
 
 .footer_3 {
@@ -182,13 +203,17 @@ p      {
 
 /*suite de texte à la page 1*/
 
-div.suite{
+.suite{
     
     display:none;
+    color: black;
+    padding: 30 px;
+    font-family: 'Gabriela', serif;
+    
 }
 
 
-div.suite:target {
+.suite:target {
   display: block;
 }
 
@@ -203,7 +228,7 @@ div.suite:target {
     text-align:center;
     
     text-decoration: none;color: white;
-    font-weight: bold;    
+    font-weight: bold; 
 }
 
 
