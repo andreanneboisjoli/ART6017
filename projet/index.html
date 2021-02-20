@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+			<title>Plaisirs extraterrestres</title>
+			<link rel="stylesheet" href="style.css">
+				<script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+				<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js"></script>
+				<script src="script.js"></script>
+			</head>
+			<body class="monet">
+                
+				<audio id="debussy">
+					<source src="lune.ogg" type="audio/ogg">
+					<source src="lune.mp3" type="audio/mpeg">
+         Votre navigateur ne supporte pas l'élément audio.
+      
+						</audio>
+						<div class="titre">
+                            <h1><a href="index.html">Plaisirs extraterrestres></a></h1>
+						</div>
+						<div class="boite">
+							<p class="texte">C’était une magnifique journée pour se faire torturer.</p>
+							<button onclick="playAudio()" type="button">
+								<a href="#suite1">Commencer la lecture...</a>
+							</button>
+							<div class="suite" id="suite1">
+								<p class="texte" >J’étais assis sur une chaise dans un jardin. Il faisait beau, de ce beau que seuls Monet et Debussy semblent pouvoir appréhender. Les rameaux du saule pleureur au-dessous duquel je me détendais effleuraient la visière de ma casquette en tweed; mais je n’étais pas à l’ombre car voyez là-bas, le soleil orange déjà se prosternait, tiré vers le sol par le lourd après-midi. Ses rayons obliques embrasaient les travées de fleurs qui s’étiraient de chaque côté de mon banc : les pétunias et les marguerites à gauche, tremblotants dans le vent chaud; les roses rouges et les bégonias à droite, secs, immobiles, avec le naturel de celle qui se sait admirée. Derrière moi, de hautes herbes et des fougères se glissaient entre les traverses du dossier de la chaise et me chatouillaient le dos. Un robot ratissait le parc au loin, je lui souris. Il me salua puis exécuta un humain en liberté qui passait par là. Je tressaillis. Des oiseaux gazouillaient. C’était joli, Mars.</p>
+								
+                                <button id="play" onclick="playAudio()" type="button">Play</button>
+                                <button id="pause" onclick="pauseAudio()" type="button">Pause</button>
+								
+                                <a class="carrepage1" href="page_2.html">						
+                                 <p class="carre">></p>
+								</a>
+							</div>
+						</div>
+						
+						
+                <script>
+          
+           
+                    
+                    
+  //Faire jouer / arrêter la musique quand on appuie sur le bouton
+                    
+       var x = document.getElementById("debussy"); 
+         
+         function playAudio() { 
+           x.play(); 
+         } 
+         
+         function pauseAudio() { 
+           x.pause(); 
+         } 
+                       
+                       
+                     
+             
+ // Arrêter l'audio avec la barre espace          
+           
+       
+       var audio = document.querySelector('audio');
+
+if (audio) {
+
+  window.addEventListener('keydown', function (event) {
+
+    var key = event.which || event.keyCode;
+
+    if (key === 32) { // spacebar
+
+      event.preventDefault();
+
+      audio.paused ? audio.play() : audio.pause();
+      
+    }
+
+  });
+}
+       
+                       
+                       
+      </script>
+                
+						<footer class="footer">
+							<div class="textefooter">
+								<p class="credits">Texte: Noah Boisjoli-Jebali
+									<br>Un site de 
+										<a class="credits" href="mailto:jacinthe.bouchard@hotmail.ca">Jacinthe Bouchard</a> et 
+										<a class="credits" href="mailto:andreanneboisjoli@gmail.com">Andréanne Boisjoli</a>
+										<br>Image: Monet, Les Nymphéas.
+											<br>Musique : Clair de Lune, par Debussy, joué par 
+												<a href="http://www.lisztonian.com/titles/Clair+de+Lune-113.html" class="credits" target="_blank">Jeremiah Jones
+												</p>
+											</div>
+										</footer>
+									</body>
+								</html>

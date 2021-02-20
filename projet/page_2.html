@@ -9,22 +9,24 @@
       <script src="script.js"></script>
    </head>
    <body class="p2">
-      <video width="100%" autoplay muted loop id="myVideo">
+      <video width="100%" autoplay muted loop id="videosaule">
          <source src="saule.mp4" type="video/mp4">
          Votre navigateur ne supporte pas le vidéo HTML5.
       </video>
-      <audio autoplay controls id="myAudio">
+      <audio autoplay id="debussy">
          <source src="lune.ogg" type="audio/ogg">
          <source src="lune.mp3" type="audio/mpeg">
          Votre navigateur ne supporte pas l'élément audio.
       </audio>
       <div class="titre">
-         <h1>Plaisirs extraterrestres</h1>
+          <h1><a href="index.html">Plaisirs extraterrestres></a></h1>
       </div>
       <div class="boite">
          <p class="texte">Je n’avais que dix-sept ans à l’époque, et comme Rimbaud l’a dit, « on n’est pas sérieux, quand on a dix-sept ans ». Malgré tout le temps qui s’est écoulé depuis, les sensations – l’odeur de la forêt, des fleurs et des fraises, charriée par le vent; le chatouillis des fougeroles sur ma peau, le métal froid sur mes chevilles et mes poignets ligotés; le goût des brioches que mon grand-père m’avait données avant mon départ de la Terre, le sucre se dissolvant encore dans ma bouche; le clapotis de la rivière qui coulait plus bas, le jargon des Martiens – oui, ces sensations sont encore vives dans ma mémoire. La douleur intense est susceptible d’ancrer dans vos têtes les plus infimes détails.</p>
-         <div class="carre">
-            <a class="carre" href="page_1.html">
+         <button id="pause" onclick="pauseAudio()" type="button">Pause Audio</button>
+          
+          <div class="carre">
+            <a class="carre" href="index.html">
                <p class="carre">&#60;</p>
             </a>
          </div>
@@ -42,7 +44,23 @@
       </footer>
        
        <script>
-       //Arrêter l'audio avec la barre d'espace
+           
+           
+//Faire jouer / arrêter la musique quand on appuie sur le bouton
+           
+         var x = document.getElementById("debussy"); 
+         
+         function playAudio() { 
+           x.play(); 
+         } 
+         
+         function pauseAudio() { 
+           x.pause(); 
+         }   
+           
+          
+           
+ //Arrêter l'audio avec la barre d'espace
            
        var audio = document.querySelector('audio');
 
@@ -54,8 +72,7 @@ if (audio) {
 
     if (key === 32) { // spacebar
 
-      // eat the spacebar, so it does not scroll the page
-      event.preventDefault();
+            event.preventDefault();
 
       audio.paused ? audio.play() : audio.pause();
       
