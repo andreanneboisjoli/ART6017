@@ -1,3 +1,5 @@
+
+
 p      {
     
     color: black;
@@ -170,7 +172,7 @@ button {
 
 /*suite de texte à la page 1*/
 
-div.suite{
+.suite{
     
     display:none;
     color: black;
@@ -180,7 +182,7 @@ div.suite{
 }
 
 
-div.suite:target {
+.suite:target {
   display: block;
 }
 
