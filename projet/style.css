@@ -28,7 +28,6 @@ p      {
     background-image:url("mars_nasa.jpg");
     position:absolute;
     z-index: 0;
-    
 }
 
 .p2     {
@@ -56,39 +55,35 @@ p      {
     padding:0;
     border:0;
     outline:0;
-    width: auto;
+    width: 200%;
     font-size:100%;
     vertical-align:baseline;
     background-image:url("monet.jpg");
-    height: 100%;
+    height: 300%;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    transition-duration: 5s;
+    transition-duration: 15s;
     transition-property: height;
+    position: absolute;
+    top: 0;
+    left: 0;
     
 }
 
-.monet:before {
-    height: 200%;
-    width: auto;
-}
 
-/*.page-container {
+.monet {
     animation-name: zoom;
-    animation-duration: 5s;
+    animation-duration: 15s;
     animation-direction: alternate;
-    animation-iteration-count: infinite;   
+    animation-iteration-count: 2;
+       
 }
 
 @keyframes zoom {
-    cubic-bezier(.56,.82,.96,.86)
-    0% {width: 200%; height: auto;}
-    25% {width: 175%; height: auto;}
-    50% {width: 150%; height: auto;}
-    75% {width: 125%; height: auto;}
-    100%{width: 100%; height: auto;}
-}*/
+    0% {height: 400%; width:  200%;}
+    100%{height: 200%; width: 100%;}
+}
 
 .flash   {
     
@@ -127,22 +122,54 @@ p      {
     z-index:2;
     width:50vw;
     opacity: 0.9;
-    font-family: 'Courgette', cursive;
-    font-size: 20px;
+    font-family: 'Gabriela', serif;
+    font-size: 18px;
+    color: white;
 }
 
+.titre3 {
+    
+    background-color: #503778;
+    margin-top: 5vw;
+    margin-left: 15vw;
+    padding : 18px;
+    z-index:2;
+    width:50vw;
+    opacity: 0.9;
+    font-family: 'Gabriela', serif;
+    font-size: 20px;
+    color: white;
+}
+
+.titre4 {
+    
+    background-color: #c98763;
+    margin-top: 5vw;
+    margin-left: 15vw;
+    padding : 18px;
+    z-index:2;
+    width:50vw;
+    opacity: 0.9;
+    font-family: 'Gabriela', serif;
+    font-size: 20px;
+    color: white;
+}
 
 .texte {
    
     color: black;
     padding: 30 px;
-    font-family: 'Gabriela', serif;
+    font-family: 'Roboto Slab', serif;
+    font-weight: 200;
+    font-size: 12px
 }
 
 .suite {
    
     color: black;
-        font-family: 'Gabriela', serif;
+    font-family: 'Roboto Slab', serif;
+    font-weight: 200;
+    font-size: 12px
 }
 
 
@@ -177,7 +204,7 @@ p      {
 
     .footer {
     background-color:#617866;
-    padding: 10px;
+    padding:10px;
     position: fixed;
     right: 0;
     bottom: 0;
@@ -185,11 +212,15 @@ p      {
     padding: 1rem;
     margin-top: 5vw;
     height: 135px;
+    
 }
 
+
 button {
-  font-family: 'Courgette', cursive;          
+  font-family: 'Gabriela', serif; 
+  text-decoration: none;
 }
+
 
 .credits-link {
     color: white;
@@ -203,9 +234,20 @@ button {
     bottom: 0;
     left: 0;
     padding: 1rem;
+    
 }
 
 
+.footer_4 {
+    background-color:#c98763;
+    padding: 10px;
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    padding: 1rem;
+
+}
 
 /*suite de texte à la page 1*/
 
@@ -223,53 +265,63 @@ div.suite:target {
   display: block;
 }
 
+/* Boutons pour changer de page*/
 
+.changementPage{
+    display: flex;
+    background-color: inherit;
+    margin-top: 15px;
+}
 
-.carrepage1 {
+.carreGauche {
     
     background-color: #617866;
-    width:40px;
+    max-width:40px;
     height:40px;
-    font-size: 30px;
-    text-align:center;
-    
-    text-decoration: none;
-    color: white;
-    font-weight: bold; 
-    
-    
-    
+    flex: 1;
 }
 
 
-/*boutons pour changer de page */
-
-.carre {
-    
+.carreDroite {
     background-color: #617866;
-    width:40px;
+    max-width:40px;
     height:40px;
-    padding-top: 3px;
-    font-size: 30px;
-    text-align:center;
-    color: white;
-    font-weight: bold;
-    text-decoration: none;
-    
-    
+    flex: 1;
+    margin-left: 32vw;
 }
 
-.carre_3 {
+.texteCarre {
+    text-align:center;
+    color: white;
+    font-weight: bolder;
+    text-decoration: none;
+    font-size: 30px;
+    padding-top: 2px;
+}
+
+.carre_3Gauche {
     
     background-color: #503778;
-    width:40px;
+    max-width:40px;
     height:40px;
-    font-size: 30px;
-    text-align:center;
-    text-decoration: none;
-    color: white;
-    font-weight: bold;
+    flex: 1;  
+}
+
+.carre_4Gauche {
     
+    background-color: #c98763;
+    max-width:40px;
+    height:40px;
+    flex: 1;  
+}
+
+.carre_3Droite {
+    
+    background-color: #503778;
+    max-width:40px;
+    height:40px;
+    flex: 1;  
+    margin-left: 32vw;
 }
 
 .droite { 

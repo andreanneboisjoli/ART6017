@@ -8,12 +8,12 @@
       <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js"></script>
       <script src="script.js"></script>
    </head>
-   <body class="monet">
-       <link rel="preconnect" href="https://fonts.gstatic.com">
-       <link href="https://fonts.googleapis.com/css2?family=Cormorant+Upright:wght@700&display=swap" rel="stylesheet">
+   <body>
+       <div class="monet">
        <link href="https://fonts.googleapis.com/css2?family=Gabriela&display=swap" rel="stylesheet">
        <link rel="preconnect" href="https://fonts.gstatic.com">
-       <link href="https://fonts.googleapis.com/css2?family=Courgette&display=swap" rel="stylesheet">
+       <link rel="preconnect" href="https://fonts.gstatic.com">
+       <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap" rel="stylesheet">
       <audio id="debussy">
          <source src="lune.ogg" type="audio/ogg">
          <source src="lune.mp3" type="audio/mpeg">
@@ -22,22 +22,21 @@
       <div class="page-container">
        <div class="content-wrap">
       <div class="titre">
-        <h1><a href="index.html">Plaisirs extraterrestres</a></h1>
+        <h1>Plaisirs extraterrestres</h1>
       </div>
       <div class="boite">
          <p class="texte">C’était une magnifique journée pour se faire torturer.</p>
         <div id="disparition">
-        <button onclick="playAudio(), faireDisparaitreBouton()" type="button"><a href="#suite1">Commencer la lecture...</a></button>
+        <button  onclick="playAudio(),faireDisparaitreBouton()" type="button"><a class="bouton" href="#suite1">Commencer la lecture...</a></button>
           </div>
          
           <div class="suite" id="suite1">
           <p class="suite">J’étais assis sur une chaise dans un jardin. Il faisait beau, de ce beau que seuls Monet et Debussy semblent pouvoir appréhender. Les rameaux du saule pleureur au-dessous duquel je me détendais effleuraient la visière de ma casquette en tweed; mais je n’étais pas à l’ombre car voyez là-bas, le soleil orange déjà se prosternait, tiré vers le sol par le lourd après-midi. Ses rayons obliques embrasaient les travées de fleurs qui s’étiraient de chaque côté de mon banc : les pétunias et les marguerites à gauche, tremblotants dans le vent chaud; les roses rouges et les bégonias à droite, secs, immobiles, avec le naturel de celle qui se sait admirée. Derrière moi, de hautes herbes et des fougères se glissaient entre les traverses du dossier de la chaise et me chatouillaient le dos. Un robot ratissait le parc au loin, je lui souris. Il me salua puis exécuta un humain en liberté qui passait par là. Je tressaillis. Des oiseaux gazouillaient. C’était joli, Mars.			</p>
-         <button id="play" onclick="playAudio()" type="button">Play</button>
+         <button id="play" onclick="playAudio()" type="button">Jouer</button>
          <button id="pause" onclick="pauseAudio()" type="button">Pause</button>
-         <div class="carrepage1">
-            <a class="carrepage1" href="page_2.html">
-               <p class="carre">></p>
-            </a>
+         <div class="carreDroite">
+             <a class="texteCarre" href="page_2.html"><p class="texteCarre">&#62;</p></a>
+                
          </div>
       </div>
     </div>
@@ -49,10 +48,9 @@
     //Faire disparaître le bouton après avoir commencé la lecture
     
     function faireDisparaitreBouton () {
-        document.getElementById("disparition").innerHTML = ""
+        document.getElementById("disparition").innerHTML = "";
     }
     
-    }
                     
   //Faire jouer / arrêter la musique quand on appuie sur le bouton
                     
@@ -100,5 +98,6 @@ if (audio) {
             <p class="credits">Texte: Noah Boisjoli-Jebali<br>Un site de <a class="credits-link" href="mailto:jacinthe.bouchard@hotmail.ca">Jacinthe Bouchard</a> et <a class="credits-link" href="mailto:andreanneboisjoli@gmail.com">Andréanne Boisjoli</a> <br>Image: Monet, Les Nymphéas.<br>Musique : Clair de Lune, par Debussy, joué par <a href="http://www.lisztonian.com/titles/Clair+de+Lune-113.html" class="credits-link" target="_blank">Jeremiah Jones</a>
          </div>
     </footer>
+    </div>
    </body>
 </html>
