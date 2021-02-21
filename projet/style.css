@@ -63,7 +63,7 @@ p      {
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    transition-duration: 15s;
+    transition-duration: 25s;
     transition-property: height;
     position: absolute;
     top: 0;
@@ -74,7 +74,7 @@ p      {
 
 .monet {
     animation-name: zoom;
-    animation-duration: 15s;
+    animation-duration: 25s;
     animation-direction: alternate;
     animation-iteration-count: 2;
        
@@ -123,7 +123,7 @@ p      {
     width:50vw;
     opacity: 0.9;
     font-family: 'Gabriela', serif;
-    font-size: 18px;
+    font-size: 25px;
     color: white;
 }
 
@@ -137,7 +137,7 @@ p      {
     width:50vw;
     opacity: 0.9;
     font-family: 'Gabriela', serif;
-    font-size: 20px;
+    font-size: 25px;
     color: white;
 }
 
@@ -151,7 +151,7 @@ p      {
     width:50vw;
     opacity: 0.9;
     font-family: 'Gabriela', serif;
-    font-size: 20px;
+    font-size: 25px;
     color: white;
 }
 
@@ -161,7 +161,7 @@ p      {
     padding: 30 px;
     font-family: 'Roboto Slab', serif;
     font-weight: 200;
-    font-size: 12px
+    font-size: 20px;
 }
 
 .suite {
@@ -169,7 +169,7 @@ p      {
     color: black;
     font-family: 'Roboto Slab', serif;
     font-weight: 200;
-    font-size: 12px
+    font-size: 20px;
 }
 
 
@@ -215,10 +215,14 @@ p      {
     
 }
 
+#disparition {
+    text-decoration: none;
+}
 
 button {
   font-family: 'Gabriela', serif; 
   text-decoration: none;
+    font-size: 18px;
 }
 
 
