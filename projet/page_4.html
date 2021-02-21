@@ -9,14 +9,14 @@
        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
       <script src="script.js"></script>
    </head>
-   <body class="jardin" id="canvas">
+   <body class="mars">
       <audio autoplay id="debussy">
-         <source src="mus3.ogg" type="audio/ogg">
-         <source src="mus3.mp3" type="audio/mpeg">
+         <source src="lune.ogg" type="audio/ogg">
+         <source src="lune.mp3" type="audio/mpeg">
          Votre navigateur ne supporte pas l'élément audio.
       </audio>
       <!-- <div class="ctn">-->
-         <div class="flash">   </div>
+         
       <div class="titre">
          <h1>Plaisirs extraterrestres</h1>
       </div>
@@ -26,20 +26,16 @@
         <button id="play" onclick="playAudio()" type="button">Play</button>
         <button id="pause" onclick="pauseAudio()" type="button">Pause</button>
          <div class="carre_3">
-            <a class="carre_3" href="page_2.html">
+            <a class="carre_3" href="page_3.html">
                <p class="carre_3">&#60;</p>
             </a>
          </div>
-         <div class="carre_3">
-            <a class="carre_3" href="page_4.html">
-               <p class="carre_3">&#62;</p>
-            </a>
-         </div>
+         
       </div>
-      <!--  </div> -->
+      
       <footer class="footer_3">
          <div class="textefooter">
-            <p class="credits-link">Texte: Noah Boisjoli-Jebali<br>Un site de <a class="credits-link" href="mailto:jacinthe.bouchard@hotmail.ca">Jacinthe Bouchard</a> et <a class="credits-link" href="mailto:andreanneboisjoli@gmail.com">Andréanne Boisjoli</a> <br>Image par <a class="credits-link" href="https://pixabay.com/fr/users/scholty1970-7596740/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=4336753">Achim Scholty</a> de <a class="credits-link" href="https://pixabay.com/fr/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=4336753">Pixabay</a><br>Musique : arrangements sur Clair de lune (Debussy) par Patrick Tremblay</p>
+            <p class="credits-link">Texte: Noah Boisjoli-Jebali<br>Un site de <a class="credits-link" href="mailto:jacinthe.bouchard@hotmail.ca">Jacinthe Bouchard</a> et <a class="credits-link" href="mailto:andreanneboisjoli@gmail.com">Andréanne Boisjoli</a> <br>Image par <a class="credits-link" href="https://pixabay.com/fr/users/scholty1970-7596740/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=4336753">Achim Scholty</a> de <a class="credits-link" href="https://pixabay.com/fr/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=4336753">Pixabay</a><br>Musique : Clair de Lune, par Debussy, joué par <a href="http://www.lisztonian.com/titles/Clair+de+Lune-113.html" class="credits-link" target="_blank">Jeremiah Jones</a></p>
             
          </div>
                    
@@ -87,27 +83,7 @@ if (audio) {
   });
 }
             
- // Éclair qui apparaît de façon aléatoire
-       
- function randRange(data) {
-       var newTime = data[Math.floor(data.length * Math.random())];
-       return newTime;
-}
-
-function toggleSomething() {
-       var timeArray = new Array(4000, 300, 150, 250, 2000, 3000, 1000, 1500);
-
-            $(".flash").fadeIn(20).fadeOut(70); 
-
-       clearInterval(timer);
-       timer = setInterval(toggleSomething, randRange(timeArray));
-}
-
-var timer = setInterval(toggleSomething, 1000);
-        
-            
-            
-            
+ 
             
       
 
