@@ -1,8 +1,6 @@
-
-
 p      {
     
-    color: black;
+    color:white;
 }
 
 /* Fonds de pages */
@@ -108,6 +106,12 @@ p      {
     font-family: 'Gabriela', serif;
 }
 
+.suite {
+   
+    color: black;
+        font-family: 'Gabriela', serif;
+}
+
 
 
 
@@ -172,7 +176,7 @@ button {
 
 /*suite de texte à la page 1*/
 
-.suite{
+div.suite{
     
     display:none;
     color: black;
@@ -182,7 +186,7 @@ button {
 }
 
 
-.suite:target {
+div.suite:target {
   display: block;
 }
 
