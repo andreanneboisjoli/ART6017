@@ -27,7 +27,12 @@ p      {
     vertical-align:baseline;
     background-image:url("mars_nasa.jpg");
     position:absolute;
-    z-index: 0;
+    
+
+ 
+  
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .p2     {
@@ -85,6 +90,10 @@ p      {
     100%{height: 200%; width: 100%;}
 }
 
+
+/*éclairs*/
+
+
 .flash   {
     
     width:100vw;
@@ -98,17 +107,20 @@ p      {
 }
 
 
+
+
 .boite  {
     
     
     background-color: whitesmoke;
     margin-left:15vw;
     margin-top:5vw;
-    padding : 30px;
+    padding : 40px;
     z-index:2;
     width:50vw;
     opacity: 0.9;
     margin-bottom: 5vw;
+    
     
     
 }
@@ -118,13 +130,20 @@ p      {
     background-color: #617866;
     margin-top: 5vw;
     margin-left: 15vw;
-    padding : 20px;
-    z-index:2;
+    padding-left : 40px;
+    padding-top:5px;
+    padding-bottom: 5px;
     width:50vw;
     opacity: 0.9;
     font-family: 'Gabriela', serif;
-    font-size: 25px;
+    font-size: 22px;
     color: white;
+}
+
+a.titreblanc {
+    
+    color: white;
+    text-decoration: none;
 }
 
 .titre3 {
@@ -132,26 +151,28 @@ p      {
     background-color: #503778;
     margin-top: 5vw;
     margin-left: 15vw;
-    padding : 18px;
-    z-index:2;
+    padding-left : 40px;
+    padding-top:5px;
+    padding-bottom: 5px;
     width:50vw;
     opacity: 0.9;
     font-family: 'Gabriela', serif;
-    font-size: 25px;
+    font-size: 22px;
     color: white;
 }
 
 .titre4 {
     
     background-color: #c98763;
-    margin-top: 5vw;
+   margin-top: 5vw;
     margin-left: 15vw;
-    padding : 18px;
-    z-index:2;
+    padding-left : 40px;
+    padding-top:5px;
+    padding-bottom: 5px;
     width:50vw;
     opacity: 0.9;
     font-family: 'Gabriela', serif;
-    font-size: 25px;
+    font-size: 22px;
     color: white;
 }
 
@@ -161,7 +182,7 @@ p      {
     padding: 30 px;
     font-family: 'Roboto Slab', serif;
     font-weight: 200;
-    font-size: 20px;
+    font-size: 16px;
 }
 
 .suite {
@@ -169,7 +190,7 @@ p      {
     color: black;
     font-family: 'Roboto Slab', serif;
     font-weight: 200;
-    font-size: 20px;
+    font-size: 16px;
 }
 
 
@@ -212,17 +233,55 @@ p      {
     padding: 1rem;
     margin-top: 5vw;
     height: 135px;
+        font-family: 'Gabriela', serif; 
     
 }
 
 
 
-button {
+.button1 {
   font-family: 'Gabriela', serif; 
   text-decoration: none;
-    font-size: 18px;
+    font-size: 16px;
+    background-color:#617866;
+    border:none;
+    border-radius: 5px;
+    color:white;
 }
 
+a.button1  {
+  font-family: 'Gabriela', serif; 
+  text-decoration: none;
+    font-size: 16px;
+    color:white;
+}
+
+
+.button3 {
+  font-family: 'Gabriela', serif; 
+  text-decoration: none;
+    font-size: 16px;
+    background-color:#503778;
+    border:none;
+    border-radius: 5px;
+    color:white;
+}
+
+.button4 {
+  font-family: 'Gabriela', serif; 
+  text-decoration: none;
+    font-size: 16px;
+    background-color:#c98763;
+    border:none;
+    border-radius: 5px;
+    color:white;
+}
+
+
+
+
+
+/*     Pied-de-page     */
 
 .credits-link {
     color: white;
@@ -236,6 +295,7 @@ button {
     bottom: 0;
     left: 0;
     padding: 1rem;
+    font-family: 'Gabriela', serif; 
     
 }
 
@@ -248,6 +308,7 @@ button {
     bottom: 0;
     left: 0;
     padding: 1rem;
+    font-family: 'Gabriela', serif; 
 
 }
 
@@ -273,23 +334,54 @@ div.suite:target {
     display: flex;
     background-color: inherit;
     margin-top: 15px;
+    justify-content:space-between;
+}
+
+.changementPage1{
+   
+    display: flex;
+        margin-top: 15px;
+    justify-content:space-between;
 }
 
 .carreGauche {
     
     background-color: #617866;
-    max-width:40px;
+    width:40px;
     height:40px;
-    flex: 1;
+    font-family: 'Gabriela', serif;
 }
 
 
 .carreDroite {
     background-color: #617866;
-    max-width:40px;
+    width:40px;
     height:40px;
-    flex: 1;
-    margin-left: 32vw;
+    font-family: 'Gabriela', serif;
+}
+
+.carreMilieu  {
+    background-color: #617866;
+    width:40px;
+    height:40px;
+    
+    font-family: 'Gabriela', serif;
+}
+
+.carreMilieu3  {
+    background-color: #503778;
+    width:40px;
+    height:40px;
+    
+    font-family: 'Gabriela', serif;
+}
+
+.carreMilieu4  {
+    background-color: #c98763;
+    width:40px;
+    height:40px;
+    
+    font-family: 'Gabriela', serif;
 }
 
 .texteCarre {
@@ -299,31 +391,31 @@ div.suite:target {
     text-decoration: none;
     font-size: 30px;
     padding-top: 2px;
+    font-family: 'Gabriela', serif;
 }
 
 .carre_3Gauche {
     
     background-color: #503778;
-    max-width:40px;
+    width:40px;
     height:40px;
-    flex: 1;  
+    font-family: 'Gabriela', serif;
 }
 
 .carre_4Gauche {
     
     background-color: #c98763;
-    max-width:40px;
+   width:40px;
     height:40px;
-    flex: 1;  
+    font-family: 'Gabriela', serif;
 }
 
 .carre_3Droite {
     
     background-color: #503778;
-    max-width:40px;
+    width:40px;
     height:40px;
-    flex: 1;  
-    margin-left: 32vw;
+    font-family: 'Gabriela', serif;
 }
 
 .droite { 
