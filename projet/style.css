@@ -482,6 +482,8 @@ div.suite:target {
     font-family: 'Gabriela', serif;
     padding-left: 5px;
     padding-right: 5px;
+    margin-top: 20px;
+    padding-top: 5px;
 }
 
 .carreRetroDroite {
@@ -492,6 +494,8 @@ div.suite:target {
     font-family: 'Gabriela', serif;
     padding-left: 5px;
     padding-right: 5px;
+    margin-top: 20px;
+    padding-top: 5px;
 }
 
 .carre_3Droite {
