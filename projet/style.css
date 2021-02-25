@@ -26,14 +26,24 @@ p      {
     font-size:100%;
     vertical-align:baseline;
     background-image:url("mars_nasa.jpg");
-    position:absolute;
-    
-
- 
-  
-  background-repeat: no-repeat;
-  background-size: cover;
+    position:absolute;   
+    background-repeat: no-repeat;
+    background-size: cover;
 }
+
+.retro      {
+    margin:0;
+    padding:0;
+    border:0;
+    outline:0;
+    font-size:100%;
+    vertical-align:baseline;
+    background-image:url("retrospective.jpg");
+    position:absolute;   
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
 
 .p2     {
     margin:0;
@@ -139,6 +149,22 @@ p      {
     font-size: 22px;
     color: white;
 }
+
+.titreRetro {
+    
+    background-color: #4dc9c7;
+    margin-top: 5vw;
+    margin-left: 15vw;
+    padding-left : 40px;
+    padding-top:5px;
+    padding-bottom: 5px;
+    width:50vw;
+    opacity: 0.9;
+    font-family: 'Gabriela', serif;
+    font-size: 22px;
+    color: white;
+}
+
 
 a.titreblanc {
     
@@ -312,6 +338,18 @@ a.button1  {
 
 }
 
+.footerRetro {
+    background-color:#4dc9c7;
+    padding: 10px;
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    padding: 1rem;
+    font-family: 'Gabriela', serif; 
+
+}
+
 /*suite de texte à la page 1*/
 
 div.suite{
@@ -384,12 +422,30 @@ div.suite:target {
     font-family: 'Gabriela', serif;
 }
 
+.carreMilieuRetro  {
+    background-color: inherit;
+    width:40px;
+    height:40px;
+    
+    font-family: 'Gabriela', serif;
+}
+
 .texteCarre {
     text-align:center;
     color: white;
     font-weight: bolder;
     text-decoration: none;
     font-size: 30px;
+    padding-top: 2px;
+    font-family: 'Gabriela', serif;
+}
+
+.texteCarreRetro {
+    text-align:center;
+    color: white;
+    font-weight: bolder;
+    text-decoration: none;
+    font-size: 20px;
     padding-top: 2px;
     font-family: 'Gabriela', serif;
 }
@@ -408,6 +464,34 @@ div.suite:target {
    width:40px;
     height:40px;
     font-family: 'Gabriela', serif;
+}
+
+.carre_4Droite {
+    
+    background-color: #c98763;
+    width:40px;
+    height:40px;
+    font-family: 'Gabriela', serif;
+}
+
+.carreRetroGauche {
+    
+    background-color: #4dc9c7;
+   width:auto;
+    height:40px;
+    font-family: 'Gabriela', serif;
+    padding-left: 5px;
+    padding-right: 5px;
+}
+
+.carreRetroDroite {
+    
+    background-color: #4dc9c7;
+    width:auto;
+    height:40px;
+    font-family: 'Gabriela', serif;
+    padding-left: 5px;
+    padding-right: 5px;
 }
 
 .carre_3Droite {
