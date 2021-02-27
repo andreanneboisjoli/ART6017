@@ -75,7 +75,7 @@ p      {
     vertical-align:baseline;
     background-image:url("monet.jpg");
     height: 300%;
-    background-position: center;
+    background-position:center;
     background-repeat: no-repeat;
     background-size: cover;
     transition-duration: 25s;
@@ -92,6 +92,7 @@ p      {
     animation-duration: 25s;
     animation-direction: alternate;
     animation-iteration-count: 2;
+    
        
 }
 
@@ -116,7 +117,7 @@ p      {
     
 }
 
-
+/***** Textes***/
 
 
 .boite  {
@@ -249,21 +250,7 @@ a.titreblanc {
 }
 
 
-    .footer {
-    background-color:#617866;
-    padding:10px;
-    position: fixed;
-    right: 0;
-    bottom: 0;
-    left: 0;
-    padding: 1rem;
-    margin-top: 5vw;
-    height: 135px;
-        font-family: 'Gabriela', serif; 
-    
-}
-
-
+ /****Boutons play / pause / suite***/
 
 .button1 {
   font-family: 'Gabriela', serif; 
@@ -307,10 +294,25 @@ a.button1  {
 
 
 
-/*     Pied-de-page     */
+/***     Pied-de-page     ***/
 
 .credits-link {
     color: white;
+}
+
+
+  .footer {
+    background-color:#617866;
+    padding:10px;
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    padding: 1rem;
+    margin-top: 5vw;
+    height: 135px;
+        font-family: 'Gabriela', serif; 
+    
 }
 
 .footer_3 {
@@ -366,7 +368,7 @@ div.suite:target {
   display: block;
 }
 
-/* Boutons pour changer de page*/
+/*** Boutons pour changer de page**/
 
 .changementPage{
     display: flex;
