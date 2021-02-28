@@ -42,7 +42,7 @@
          <source src="lune.mp3" type="audio/mpeg">
          Votre navigateur ne supporte pas l'élément audio.
       </audio>
-      <!-- <div class="ctn">-->
+      
       <div class="page-container">
         <div class="content-wrap">   
       <div class="titre4">
@@ -88,53 +88,8 @@
       </footer>
     
        
-        <script>
-            
-            
-            
-            
-           // /Faire jouer  arrêter la musique quand on appuie sur le bouton
-                    
-       var x = document.getElementById("debussy"); 
-         
-         function playAudio() { 
-           x.play(); 
-         } 
-         
-         function pauseAudio() { 
-           x.pause(); 
-         } 
-              
-       
-           //arrêter l'audio la barre d'espace 
-            
-       var audio = document.querySelector('audio');
-
-if (audio) {
-
-  window.addEventListener('keydown', function (event) {
-
-    var key = event.which || event.keyCode;
-
-    if (key === 32) { // spacebar
-
-      // eat the spacebar, so it does not scroll the page
-      event.preventDefault();
-
-      audio.paused ? audio.play() : audio.pause();
       
-    }
-
-  });
-}
-            
- 
-            
-      
-
-            
-            
-</script>
        
    </body>
 </html>
+<script type="text/javascript"   src="script/script.js"></script>

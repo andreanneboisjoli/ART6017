@@ -6,9 +6,9 @@
       <link rel="stylesheet" href="style.css">
       <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
       <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js"></script>
-      <script src="script.js"></script>
+      
        
-       
+       <!-- Favicon-->
        <link rel="apple-touch-icon" sizes="57x57" href="apple-icon-57x57.png">
 <link rel="apple-touch-icon" sizes="60x60" href="apple-icon-60x60.png">
 <link rel="apple-touch-icon" sizes="72x72" href="apple-icon-72x72.png">
@@ -76,56 +76,7 @@
     </div>
 </div>
           </div>
-<script>
-          
-           
-    //Faire disparaître le bouton après avoir commencé la lecture
-    
-    function faireDisparaitreBouton () {
-        document.getElementById("disparition").innerHTML = "";
-    }
-    
-                    
-  //Faire jouer / arrêter la musique quand on appuie sur le bouton
-                    
-       var x = document.getElementById("debussy"); 
-         
-         function playAudio() { 
-           x.play(); 
-         } 
-         
-         function pauseAudio() { 
-           x.pause(); 
-         } 
-                       
-                       
-                     
-             
- // Arrêter l'audio avec la barre espace          
-           
-       
-       var audio = document.querySelector('audio');
 
-if (audio) {
-
-  window.addEventListener('keydown', function (event) {
-
-    var key = event.which || event.keyCode;
-
-    if (key === 32) { // spacebar
-
-      event.preventDefault();
-
-      audio.paused ? audio.play() : audio.pause();
-      
-    }
-
-  });
-}
-       
-                       
-                       
-      </script>
                 
       <footer class="footer">
          <div class="textefooter">
@@ -135,3 +86,4 @@ if (audio) {
     </div>
    </body>
 </html>
+<script type="text/javascript"   src="script/script.js"></script>
